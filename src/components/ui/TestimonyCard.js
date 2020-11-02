@@ -38,6 +38,13 @@ const Card = styled.div`
   margin-top: 80px;
   border-radius: 5px;
   position: relative;
+
+  @media(max-width: 560px) {
+    padding: 0 10px;
+  }
+  @media(max-width: 300px) {
+    height: 400px;
+  }
 `
 const Quote = styled.div`
   width: 80px;
@@ -54,6 +61,7 @@ const Quote = styled.div`
 `
 const P = styled.p`
   color: #999999;
+  margin-top: 50px;
 `
 const Profile = styled.div`
   display: flex;

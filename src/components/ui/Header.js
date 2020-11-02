@@ -21,6 +21,10 @@ const H1 = styled.h1`
   margin: 0;
   color: #555555;
   font-size: 48px;
+
+  @media(max-width: 360px) {
+    font-size: 25px;
+  }
 `
 const P = styled.p`
   color: #999999;

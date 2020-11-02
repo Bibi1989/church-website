@@ -67,6 +67,11 @@ const CountDownGrid = styled.div`
   grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   width: 550px;
+
+  @media(max-width: 560px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4% 10px;
+  }
 `
 const Center = styled.div`
   display: flex;
