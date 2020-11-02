@@ -1,3 +1,4 @@
+import { Col, Row } from 'antd'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout/Layout'
@@ -20,46 +21,62 @@ const homeStyles = {
   minHeight: '90vh',
 }
 const eventStyles = {
-  minHeight: '80vh',
+  height: '50vh',
 }
 
 const Home = () => {
   const [contents] = useState([
     {
-      component: (<Grid>
-          <FirstColumn>
-            <img src={image} alt=""/>
-          </FirstColumn>
-          <SecondColumn>
-            <h1>Welcome To Church</h1>
-            <h1>On Fire International</h1>
-            <h2>Home Of Supernatural</h2>
-            <h3>GOD IS INTERESTED IN YOU AND HE HAS A CLEAR PLAN FOR YOUR LIFE.</h3>
-            <p>We look forward to seeing you in-person during one of our weekly services as you fellowship with us.</p>
-            <h2>WE CELEBRATE YOU!</h2>
-            <Logo>
-              <img src={logo} alt="" width='40' height='40' />
-            </Logo>
-          </SecondColumn>
-        </Grid>)
+      component: (
+        <Grid>
+          <Row>
+            <Col xs={24} sm={24} md={24} lg={12}>
+              <FirstColumn>
+                <img src={image} alt=""/>
+              </FirstColumn>
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={12}>
+              <SecondColumn>
+                <h1>Welcome To Church</h1>
+                <h1>On Fire International</h1>
+                <h2>Home Of Supernatural</h2>
+                <h3>GOD IS INTERESTED IN YOU AND HE HAS A CLEAR PLAN FOR YOUR LIFE.</h3>
+                <p>We look forward to seeing you in-person during one of our weekly services as you fellowship with us.</p>
+                <h2>WE CELEBRATE YOU!</h2>
+                <Logo>
+                  <img src={logo} alt="" width='40' height='40' />
+                </Logo>
+              </SecondColumn>
+            </Col>
+          </Row>
+        </Grid>
+        )
     },
     {
-      component: (<Grid background={Colors.blue}>
-          <FirstColumn>
-            <img src={image} alt=""/>
-          </FirstColumn>
-          <SecondColumn>
-            <h1>Welcome To Church</h1>
-            <h1>On Fire International</h1>
-            <h2>Home Of Supernatural</h2>
-            <h3>GOD IS INTERESTED IN YOU AND HE HAS A CLEAR PLAN FOR YOUR LIFE.</h3>
-            <p>We look forward to seeing you in-person during one of our weekly services as you fellowship with us.</p>
-            <h2>WE CELEBRATE YOU!</h2>
-            <Logo>
-              <img src={logo} alt="" width='40' height='40' />
-            </Logo>
-          </SecondColumn>
-        </Grid>)
+      component: (
+        <Grid background={Colors.blue}>
+          <Row>
+            <Col xs={24} sm={24} md={24} lg={12}>
+              <FirstColumn>
+                <img src={image} alt=""/>
+              </FirstColumn>
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={12}>
+              <SecondColumn>
+                <h1>Welcome To Church</h1>
+                <h1>On Fire International</h1>
+                <h2>Home Of Supernatural</h2>
+                <h3>GOD IS INTERESTED IN YOU AND HE HAS A CLEAR PLAN FOR YOUR LIFE.</h3>
+                <p>We look forward to seeing you in-person during one of our weekly services as you fellowship with us.</p>
+                <h2>WE CELEBRATE YOU!</h2>
+                <Logo>
+                  <img src={logo} alt="" width='40' height='40' />
+                </Logo>
+              </SecondColumn>
+            </Col>
+          </Row>
+        </Grid>
+      )
     },
   ])
 
@@ -71,7 +88,7 @@ const Home = () => {
       <Section {...eventStyles}>
         <Events />
       </Section>
-      <Section background={Colors.light} height="90vh">
+      <Section background={Colors.light} height="50vh">
         <PastorPage />
       </Section>
       <Section height="50vh">
@@ -80,13 +97,13 @@ const Home = () => {
       <Section height="50vh" background={Colors.light}>
         <VideoPage />
       </Section>
-      <Section height="90vh">
+      <Section height="50vh">
         <TestimonyPage />
       </Section>
-      <Section height="60vh">
+      <Section height="50vh">
         <Banner />
       </Section>
-      <Section height="70vh">
+      <Section height="50vh">
         <Contact />
       </Section>
     </Layout>
@@ -96,9 +113,9 @@ const Home = () => {
 export default Home
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 91vh;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  min-height: 100%;
   width: 100%;
   background: ${({background}) => background ? background : "rgba(71,49,68)"};
 
@@ -107,6 +124,7 @@ const FirstColumn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   img{
     width: 100%;
@@ -119,6 +137,7 @@ const SecondColumn = styled.div`
   justify-content: center;
   padding: 0 20px;
   height: 100%;
+  width: 100%;
 
   h1, h2, h3, p{
     color: white;
@@ -130,6 +149,15 @@ const SecondColumn = styled.div`
   h1{
     font-size: 4em;
     text-align: center;
+  }
+
+  @media(max-width: 990px) {
+    padding: 40px 10px;
+
+    h1{
+      font-size: 2.5em;
+      text-align: center;
+    }
   }
 `
 const Logo = styled.div`

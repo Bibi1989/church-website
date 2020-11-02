@@ -36,4 +36,11 @@ const Grid = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 80px;
+
+  @media(max-width: 990px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media(max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
 `

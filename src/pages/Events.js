@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import HorizontalCard from '../components/ui/HorizontalCard';
 
 const styles = {
-  minHeight: '90vh',
+  minHeight: '50vh',
   paddingTop: '5%',
   // background: "teal"
 }
@@ -26,8 +26,6 @@ const Events = () => {
           <HorizontalCard />
         </Timeline.Item>
         <Timeline.Item></Timeline.Item>
-        {/* <Timeline.Item label="2020-09-01 09:12:11">Solve initial network problems</Timeline.Item>
-        <Timeline.Item label="2020-09-01 09:12:11">Network problems being solved</Timeline.Item> */}
       </TimelineStyle>
     </SectionWithPadding>
   )

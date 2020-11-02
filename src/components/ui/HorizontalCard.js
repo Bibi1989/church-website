@@ -29,6 +29,11 @@ const CardStyle = styled.div`
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   border-radius: 5px;
   overflow: hidden;
+
+  @media(max-width: 990px) {
+    grid-template-columns: 100%;
+    gap: 0px;
+  }
 `
 const Image = styled.div`
   height: 250px;

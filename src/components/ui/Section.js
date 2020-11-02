@@ -17,4 +17,8 @@ const Container = styled.div`
   display: ${({display}) => display && display};
   justify-content: ${({justifyContent}) => justifyContent && justifyContent};
   align-items: ${({alignItems}) => alignItems && alignItems};
+
+  @media(max-width: 990px) {
+    min-height: ${({mobileHeight}) => mobileHeight ? mobileHeight : "20vh"};
+  }
 `

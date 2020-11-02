@@ -137,6 +137,15 @@ const FooterStyle = styled(Footer)`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 4% 10%;
+
+  @media(max-width: 760px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4% 3%;
+  }
+  @media(max-width: 560px) {
+    grid-template-columns: 100%;
+    padding: 4% 10px;
+  }
 `
 
 const NavbarStyle = styled.nav`
@@ -146,6 +155,10 @@ const NavbarStyle = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
+
+  @media(max-width: 760px) {
+    display: none;
+  }
 `
 
 const NavList = styled.ul`

@@ -28,12 +28,16 @@ const Contact = () => {
 export default Contact
 
 const Form = styled.form`
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+
+  @media(max-width: 560px) {
+    width: 100%;
+  }
 `
 const FormGroup = styled.div`
   margin-bottom: 20px;

@@ -32,4 +32,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 
+  @media(max-width: 990px) {
+    grid-template-columns: 100%;
+  }
 `
