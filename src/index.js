@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BackTop } from 'antd';
 
 ReactDOM.render(
   <React.StrictMode>
+    <BackTop />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
