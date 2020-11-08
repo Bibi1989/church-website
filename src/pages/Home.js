@@ -14,6 +14,7 @@ import TestimonyPage from './TestimonyPage'
 import VideoPage from './VideoPage'
 
 const image = './assets/images/Pastor-1.png'
+const pastorAndWife = './assets/images/pastor-and-wife.png'
 const logo = './church_logo.jpg'
 
 
@@ -58,7 +59,7 @@ const Home = () => {
           <Row>
             <Col xs={24} sm={24} md={24} lg={12}>
               <FirstColumn>
-                <img src={image} alt=""/>
+                <img src={pastorAndWife} alt=""/>
               </FirstColumn>
             </Col>
             <Col xs={24} sm={24} md={24} lg={12}>
@@ -115,7 +116,7 @@ export default Home
 const Grid = styled.div`
   /* display: grid;
   grid-template-columns: repeat(2, 1fr); */
-  min-height: 100%;
+  min-height: 70%;
   width: 100%;
   background: ${({background}) => background ? background : "rgba(71,49,68)"};
 
@@ -125,6 +126,14 @@ const FirstColumn = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  @media(max-width: 990px) {
+    /* height: 40vh; */
+
+    img{
+      width: 40%;
+    }
+  }
 
   img{
     width: 100%;
