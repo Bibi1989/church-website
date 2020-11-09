@@ -7,7 +7,7 @@ const PastorCard = (props) => {
   return (
     <Card>
       <Image>
-        <img src={image} alt="pastor image"/>
+        <img src={props.imageUrl} alt="pastor image"/>
       </Image>
       <Content>
         <Names>{props.name}</Names>
@@ -20,23 +20,24 @@ const PastorCard = (props) => {
 export default PastorCard
 
 const Card = styled.div`
-  /* width: 300px; */
+  width: 350px;
   height: 350px;
-  /* border: 1px solid #999999; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   border-radius: 10px;
-  /* margin: 0 10px; */
+  margin: 10px auto;
 `
 const Image = styled.div`
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
 
   img{
-    border-radius: 50%;
     width: 150px;
-    height: 150px;
   }
 `
 const Content = styled.div`

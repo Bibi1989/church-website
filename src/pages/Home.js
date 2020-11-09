@@ -38,8 +38,8 @@ const Home = () => {
             </Col>
             <Col xs={24} sm={24} md={24} lg={12}>
               <SecondColumn>
-                <h1>Welcome To Church</h1>
-                <h1>On Fire International</h1>
+                <h1>Welcome To</h1>
+                <h1>Church On Fire International</h1>
                 <h2>Home Of Supernatural</h2>
                 <h3>GOD IS INTERESTED IN YOU AND HE HAS A CLEAR PLAN FOR YOUR LIFE.</h3>
                 <p>We look forward to seeing you in-person during one of our weekly services as you fellowship with us.</p>
@@ -64,8 +64,8 @@ const Home = () => {
             </Col>
             <Col xs={24} sm={24} md={24} lg={12}>
               <SecondColumn>
-                <h1>Welcome To Church</h1>
-                <h1>On Fire International</h1>
+                <h1>Welcome To</h1>
+                <h1>Church On Fire International</h1>
                 <h2>Home Of Supernatural</h2>
                 <h3>GOD IS INTERESTED IN YOU AND HE HAS A CLEAR PLAN FOR YOUR LIFE.</h3>
                 <p>We look forward to seeing you in-person during one of our weekly services as you fellowship with us.</p>

@@ -12,6 +12,10 @@ const styles = {
   // background: "teal"
 }
 
+const description = "If you are seeking His presence and power, we invite you to join us this Sunday as we worship together. God promises that all who seek Him will find Him."
+const title1 = "Sunday Service"
+const title2 = "Wednesday Service"
+
 const Events = () => {
   const [widthSize] = useWindowSize()
   return (
@@ -21,10 +25,10 @@ const Events = () => {
       </HeaderStyle>
       {widthSize > 990 ? <TimelineStyle mode={"left"}>
         <Timeline.Item label="01 November 2020">
-          <HorizontalCard />
+          <HorizontalCard description={description} title={title1} />
         </Timeline.Item>
         <Timeline.Item label="01 November 2020">
-          <HorizontalCard />
+          <HorizontalCard description={description} title={title2} />
         </Timeline.Item>
         <Timeline.Item></Timeline.Item>
       </TimelineStyle>

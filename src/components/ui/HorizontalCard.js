@@ -4,15 +4,15 @@ import Button from './Button'
 
 const pic1 = './assets/images/nav_logo.jpeg'
 
-const HorizontalCard = () => {
+const HorizontalCard = (props) => {
   return (
     <CardStyle>
       <Image>
         <img src={pic1} alt=""/>
       </Image>
       <Content>
-        <h1>Sunday Service</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga odio dolore sed facilis, corrupti natus et! Illum, accusamus quia!</p>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
         <Button title="View Event" />
       </Content>
     </CardStyle>
@@ -50,4 +50,7 @@ const Image = styled.div`
 const Content = styled.div`
   padding: 20px;
 
+  p{
+    padding-right: 20px;
+  }
 `

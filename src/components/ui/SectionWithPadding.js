@@ -18,6 +18,7 @@ const Container = styled.div`
   justify-content: ${({justifyContent}) => justifyContent && justifyContent};
   align-items: ${({ alignItems }) => alignItems && alignItems};
   padding: ${({padding}) => padding ? padding : '0 10%'};
+  width: 100%;
 
   @media(max-width: 990px) {
     padding: 5% 10px;
