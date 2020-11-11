@@ -31,7 +31,7 @@ const CardStyle = styled.div`
   overflow: hidden;
 
   @media(max-width: 990px) {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     gap: 0px;
   }
 `
@@ -49,6 +49,7 @@ const Image = styled.div`
 `
 const Content = styled.div`
   padding: 20px;
+  min-height: 200px;
 
   p{
     padding-right: 20px;

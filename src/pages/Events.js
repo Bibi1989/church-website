@@ -34,8 +34,8 @@ const Events = () => {
       </TimelineStyle>
       :
       <Cards>
-        <HorizontalCard />
-        <HorizontalCard />
+        <HorizontalCard description={description} title={title1} />
+        <HorizontalCard description={description} title={title2} />
       </Cards>  
     }
     </SectionWithPadding>

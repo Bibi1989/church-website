@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import Header from '../components/ui/Header'
 import PastorCard from '../components/ui/PastorCard'
 import SectionWithPadding from '../components/ui/SectionWithPadding'
+import { RightOutlined } from '@ant-design/icons';
 
 const benjamin = './assets/images/benjamin.jpeg'
 const maxwell = './assets/images/maxwell.jpeg'
 const henry = './assets/images/henry.jpeg'
 const samson = './assets/images/samson.jpeg'
 const pastor1 = './assets/images/Pastor-1.png'
+
 
 const pastors1 = [
   {id: 1, name: "Pastor David Philemon", post: 'Lead Pastor', imageUrl: pastor1},
@@ -53,7 +55,11 @@ const Grid1 = styled.div`
   padding: 10px;
 
   ::-webkit-scrollbar{
-    display: none;
+    height: 5px;
+    background-color: #f4f4f4;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: orange;
   }
 `
 const Grid2 = styled.div`
@@ -66,6 +72,10 @@ const Grid2 = styled.div`
   padding: 10px;
 
   ::-webkit-scrollbar{
-    display: none;
+    height: 5px;
+    background-color: #f4f4f4;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: orange;
   }
 `
